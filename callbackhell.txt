@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>countdown</title>
+ <style>
+   div{
+     background-color: rgb(28, 238, 227);
+   }
+     h1{
+         position:absolute;
+         margin-left: 150px;
+        margin-top:110px;
+         font-size: 113pt;
+         color:orange;
+         animation: a 15s infinite;
+     }
+     @keyframes a{
+         20%{color:green;}
+         25%{color: blue;}
+         34%{color: rgb(255, 72, 0);}
+     }
+    
+ </style>
+ </head>
+ <body>
+<script >
+  let time=document.createElement("div")
+   time.setAttribute("class","bold")
+   let h=document.createElement('h3')
+   h.innerHTML=""
+let m=document.createElement("h1")
+  setTimeout(() => {
+      m.innerHTML="10"
+      setTimeout(() => {
+        m.innerHTML="9"
+          setTimeout(() => {
+            m.innerHTML="8"
+              setTimeout(() => {
+                m.innerHTML="7"
+                  setTimeout(() => {
+                    m.innerHTML="6"
+                      setTimeout(() => {
+                        m.innerHTML="5"
+                          setTimeout(() => {
+                            m.innerHTML="4"
+                              setTimeout(() => {
+                                m.innerHTML="3"
+                                  setTimeout(() => {
+                                    m.innerHTML="2"
+                                    setTimeout(() => {
+                                        m.innerHTML="1"
+                                        setTimeout(() => {
+                                            m.innerHTML="0"
+                                            setTimeout(() => {
+                                              h.innerText="";
+                                              m.innerHTML="Happy Independence Day!!!";
+                                            }, 1000);
+                                        }, 1000);
+                                    }, 1000);
+                                  }, 1000);
+                              },1000);
+                          },1000);
+                      }, 1000);
+                  },1000);
+              }, 1000);
+          }, 1000);
+      },1000);
+  }, 1000);
+  time.append(h,m)
+  document.body.append(time)
+</script>
+ </body>
+ </html>
